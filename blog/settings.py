@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    "users.apps.UsersConfig",
     "blogapp.apps.BlogappConfig",
     'django.contrib.admin',
     'django.contrib.auth',
@@ -77,7 +78,7 @@ WSGI_APPLICATION = 'blog.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',  # setting up default db engine
-        'NAME': "portfoliodb",  # name of db
+        'NAME': "blogdb",  # name of db
         "USER": "postgres",  # who can access it
         "PASSWORD": "02121998",
         "HOST":  "localhost",  # where to find,
